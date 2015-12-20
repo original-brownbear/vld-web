@@ -8,7 +8,8 @@
                 data: {
                     php: php_code
                 },
-                success: function () {
+                success: function (repl) {
+                    self.set('op', repl.op);
                     self.trigger('newCodeCompiled');
                 }
             })
