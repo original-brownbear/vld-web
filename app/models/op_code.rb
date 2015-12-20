@@ -14,10 +14,6 @@ class OpCode < ActiveRecord::Base
     container = img.run('tail -f /dev/null')
     s = container.exec(
       ['/bin/bash', '-lc', 'cat  << "EOF" >> /tmp/code.php ' + "\n" + php + "\n" + 'EOF'+ "\n" + 'php -dvld.active=1 -dvld.execute=0 /tmp/code.php'], tty: true).first.join('')
-    s += "\n----\n"
-    container.copy('/tmp/code.php') do |chunk|
-      s += chunk
-    end
     container.delete force: true
 
     s
