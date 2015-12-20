@@ -1,0 +1,2 @@
+OpCodes = {};
+OpCodes.data = {};
