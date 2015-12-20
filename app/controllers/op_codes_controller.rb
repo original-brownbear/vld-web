@@ -1,6 +1,6 @@
 class OpCodesController < ApplicationController
   def new
-    OpCode.new
+    @op_code = OpCode.create({ php: params[:php] });
   end
 
   def show
