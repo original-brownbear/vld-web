@@ -1,3 +1,3 @@
 (function () {
-    OpCodes.model = Backbone.Model.extend({});
+    OpCodes.MainModel = Backbone.Model.extend({});
 })(OpCodes);
