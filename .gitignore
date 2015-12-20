@@ -17,3 +17,6 @@
 /tmp
 
 Gemfile.lock
+
+./idea
+*.iml
