@@ -3,7 +3,7 @@
         main: [
             '<div id="op_codes_main">',
             '<textarea id="op_codes_new_php" style="width:400px;height:400px"/>',
-            '<input type="button" value="Compile"/>',
+            '<input id="op_codes_new_btn" type="button" value="Compile"/>',
             '</div>']
     };
 
